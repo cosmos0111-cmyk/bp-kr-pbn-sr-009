@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="organic-stripe">
+    <meta name="bpaas-design-theme" content="kr-organic-stripe">
+    <meta name="description" content="공덕 클럽 씬에서 살아남는 법. 3년차 클럽러가 말하는 공덕 클럽 정보, 꿀팁, 피해야 할 곳. 전화 010-6279-0862">
+    <meta name="keywords" content="공덕 클럽 정보, 공덕 클럽 꿀팁, 클럽 입장 팁, 공덕 클럽 순위, 클럽 매너, 공덕 클럽 입장료, 클럽 후기">
+    <meta name="author" content="kr-pbn-sr-009">
+    <link rel="canonical" href="https://kr-pbn-sr-009.vercel.app/blog">
+    <meta property="og:title" content="공덕 클럽 정보 - 3년차가 알려주는 진짜 씬">
+    <meta property="og:description" content="가짜 리뷰 버려. 공덕 클럽 정보, 여기 다 있다. 직접 부딪힌 놈이 말한다.">
+    <title>공덕 클럽 정보 - 블로그 | 진짜 클럽러의 노하우</title>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0c0c0c;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        h1, h2, h3 {
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+        h1 {
+            font-size: 3.5rem;
+            color: #f5f5f5;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 2.2rem;
+            color: #e8e8e8;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #d4a373;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            color: #d4a373;
+            margin-bottom: 0.8rem;
+        }
+        p {
+            font-size: 1.05rem;
+            color: #b0b0b0;
+            margin-bottom: 1.2rem;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(12, 12, 12, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #f5f5f5;
+            text-decoration: none;
+            letter-spacing: -0.05em;
+        }
+        .logo span {
+            color: #d4a373;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-links a {
+            color: #b0b0b0;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #d4a373;
+        }
+        .tel-link {
+            background: #d4a373;
+            color: #0c0c0c !important;
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
+            font-weight: 700;
+        }
+        .tel-link:hover {
+            background: #c4956a;
+        }
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #e0e0e0;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+        .blog-header {
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+        .blog-header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #888;
+        }
+        .blog-post {
+            background: #141414;
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            border: 1px solid #2a2a2a;
+        }
+        .blog-post .meta {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .blog-post .meta span {
+            color: #d4a373;
+        }
+        .blog-post blockquote {
+            border-left: 4px solid #d4a373;
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+        .blog-post ul, .blog-post ol {
+            color: #b0b0b0;
+            margin: 1rem 0 1.5rem 1.5rem;
+        }
+        .blog-post li {
+            margin-bottom: 0.5rem;
+        }
+        .blog-post .highlight {
+            background: #1e1e1e;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #d4a373;
+        }
+        .blog-post .highlight p {
+            margin-bottom: 0;
+        }
+        .blog-footer {
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid #2a2a2a;
+            margin-top: 2rem;
+        }
+        .blog-footer p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .blog-footer a {
+            color: #d4a373;
+            text-decoration: none;
+        }
+        .blog-footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.6rem; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(12, 12, 12, 0.98);
+                padding: 1.5rem 2rem;
+                gap: 1.2rem;
+                border-bottom: 1px solid #2a2a2a;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+            .blog-post {
+                padding: 1.5rem;
+            }
+            .blog-post .meta {
+                flex-wrap: wrap;
+                gap: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="sticky-nav">
+        <div class="nav-inner">
+            <a href="/" class="logo"><span>공덕</span>클럽</a>
+            <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/blog">블로그</a></li>
+                <li><a href="/about">정보</a></li>
+                <li><a href="tel:01062790862" class="tel-link">010-6279-0862</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="blog-header">
+            <h1>공덕 클럽 정보<br><span style="color:#d4a373;">진짜를 원하는 놈들만</span></h1>
+            <p>3년차 클럽러가 직접 부딪히고 겪은 공덕 클럽 씬의 모든 것. 가짜 리뷰는 없다. 오직 경험만.</p>
+        </header>
+
+        <article class="blog-post">
+            <div class="meta">
+                <span>공덕 클럽 정보</span>
+                <span>2024.03.15</span>
+                <span>by 진짜 클럽러</span>
+            </div>
+            <h2>공덕 클럽, 왜 뜨는 거야?</h2>
+            <p>홍대에 지쳤냐? 강남은 너무 비싸고? 맞아. 그래서 지금 공덕이야. 공덕 클럽 씬은 2022년부터 조용히 불타오르기 시작했어. 홍대의 가짜 힙함, 강남의 돈 냄새에 질린 놈들이 하나둘 모여들기 시작한 거지.</p>
+            <p>공덕의 매력은 간단해. <strong>가식이 없다는 것</strong>. 입구에서 옷 평가하는 놈들 없고, 테이블 잡으려고 지갑 열 필요 없어. 그냥 음악 좋아하고, 술 좋아하고, 사람 좋아하면 누구나 환영. 여기가 바로 진짜 클럽 문화가 숨쉬는 곳이야.</p>
+
+            <blockquote>
+                "공덕은 클럽이 아니라 커뮤니티야. 문 열면 모두가 형이고 동생이야. 처음 온 놈도 바로 녹아든다, 그게 공덕의 힘."
+            </blockquote>
+
+            <h2>입장 전 필수 체크리스트</h2>
+            <p>처음 가는 놈들을 위해 써준다. 이거 모르면 눈치밥 먹는다.</p>
+            <ul>
+                <li><strong>신분증 필수</strong> - 공덕 클럽들은 법적으로 빡세다. 주민등록증 없으면 그냥 돌아가라.</li>
+                <li><strong>현금 챙겨라</strong> - 카드 되는 곳도 있지만, 현금만 받는 곳이 아직 있다. 5만원은 무조건 챙겨.</li>
+                <li><strong>옷차림</strong> - 정장? No. 너무 꾸민 놈들은 오히려 눈치 보인다. 깔끔한 청바지에 티셔츠면 충분.</li>
+                <li><strong>입장료</strong> - 보통 1~2만원 사이. 어떤 곳은 첫잔 포함이니까 물어봐라.</li>
+            </ul>
+
+            <div class="highlight">
+                <p><strong>🔥 꿀팁:</strong> 금요일보다는 토요일이 더 자유로운 분위기야. 일요일은 힙합 데이 하는 곳 많으니까 취향에 맞춰 골라.</p>
+            </div>
+
+            <h2>공덕 대표 클럽 3곳, 솔직 후기</h2>
+            <p>내가 직접 수백 번 드나들며 느낀 공덕의 핫플레이스들. 가감 없이 쓴다.</p>
+            
+            <h3>1. 클럽 오벨리스크</h3>
+            <p>공덕 클럽 씬의 원조. 입구부터 느껴지는 언더그라운드 감성. 음악은 하우스와 테크노가 주류. 스피커 시스템이 미쳤다. 가슴을 때리는 베이스, 말이 필요 없어. 다만 사람 많을 때는 숨 막힐 수 있으니 주의.</p>
+            <p><strong>평점:</strong> ★★★★☆ (4.5/5) - 공덕 클럽 정보 찾는다면 일단 여기부터.</p>
+
+            <h3>2. 버려진 창고</h3>
+            <p>이름 그대로 창고를 개조한 클럽. 인더스트리얼 무드가 끝내준다. 힙합과 알앤비 위주로 틀어주는데, 디제이들이 진짜 실력파야. 가끔 라이브 세션도 있음. 맥주 값이 다른 데보다 500원 싸다. 소소한 장점.</p>
+            <p><strong>평점:</strong> ★★★★☆ (4.3/5) - 힙합 좋아하면 여기로 와.</p>
+
+            <h3>3. 지하 3층</h3>
+            <p>공덕역에서 3분 거리. 이름처럼 지하에 있어서 소리 울림이 장난 아니다. 혼자 와도 금방 친해지는 분위기. 바텐더가 친절해서 첫 방문객에게 추천 메뉴를 알려줌. 여기 칵테일 '공덕선셋'은 무조건 마셔봐.</p>
+            <p><strong>평점:</strong> ★★★★☆ (4.4/5) - 혼술, 혼클에 최적화된 곳.</p>
+
+            <h2>클럽에서 살아남는 매너</h2>
+            <p>이건 공덕 클럽 정보의 핵심이니까 꼭 새겨들어라. 클럽은 즐기는 곳이지만, 기본은 있다.</p>
+            <ol>
+                <li><strong>밀치지 마라</strong> - 사람 많은 건 당연하다. "실례합니다" 한마디가 인성을 증명한다.</li>
+                <li><strong>술 강요 금지</strong> - "한 잔만" 이러는 놈들은 공덕에서 퇴출 대상 1호다.</li>
+                <li><strong>여성분들 존중</strong> - 터치 금지. 말 걸어도 되지만, 싫다는 표정이면 바로 물러나. 기본 중의 기본.</li>
+                <li><strong>DJ에게 무리하지 마</strong> - "내 노래 틀어줘" 하는 놈들, 진짜 한심하다. 디제이가 고른 음악을 즐겨라.</li>
+            </ol>
+
+            <h2>마지막으로 하고 싶은 말</h2>
+            <p>공덕 클럽 씬은 아직 커지고 있어. 홍대처럼 상업화되지 않은, 진짜 클럽 문화를 원한다면 지금이 기회야. 이 글이 너에게 도움이 됐다면, 오늘 밤 공덕으로 가라. 직접 부딪히고 느껴봐. 리얼 클럽 문화가 뭔지.</p>
+            <p>궁금한 거 있으면 전화해. <a href="tel:01062790862" style="color:#d4a373; font-weight:700;">010-6279-0862</a>로 직접 물어봐. 내가 아는 건 다 알려준다.</p>
+            <p style="color:#666; font-size:0.95rem; margin-top:2rem;">- 3년차 공덕 클럽러, 놈이 씀 -</p>
+        </article>
+    </main>
+
+    <footer class="blog-footer">
+        <div class="container">
+            <p>© 2024 공덕 클럽 정보 - 진짜를 찾는 놈들을 위한 가이드</p>
+            <p>문의: <a href="tel:01062790862">010-6279-0862</a> | <a href="mailto:kr-pbn-sr-009@example.com">kr-pbn-sr-009@example.com</a></p>
+            <p style="margin-top:1rem; font-size:0.8rem; color:#555;">본 사이트는 실제 클럽 경험을 바탕으로 작성되었습니다. 모든 정보는 주관적이며, 상황에 따라 다를 수 있습니다.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 햄버거 메뉴 외부 클릭 시 닫기
+        document
+</body>
+</html>
