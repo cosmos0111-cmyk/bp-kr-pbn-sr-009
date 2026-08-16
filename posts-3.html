@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (3/3) · kr-pbn-sr-009</title>
+  <meta name="description" content="kr-pbn-sr-009에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://seoul-club-review.program-school.online/posts-3.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* Reset & Base */
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ html { scroll-behavior: smooth; }
+ body {
+ font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif;
+ background-color: #fcf8f2;
+ color: #2e2522;
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ /* Container */
+ .container {
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 0 48px;
+ }
+
+ /* Typography - Provocative */
+ h1, h2, h3 {
+ font-weight: 700;
+ line-height: 1.2;
+ letter-spacing: -0.02em;
+ }
+ h1 {
+ font-size: 3.5rem;
+ margin-bottom: 0.5rem;
+ text-transform: uppercase;
+ }
+ h2 {
+ font-size: 2.2rem;
+ margin-bottom: 2rem;
+ border-bottom: 2px solid #2e2522;
+ padding-bottom: 0.5rem;
+ display: inline-block;
+ }
+ h3 {
+ font-size: 1.4rem;
+ margin-bottom: 0.8rem;
+ }
+ p { margin-bottom: 1rem; }
+
+ /* Sticky Nav */
+ .sticky-nav {
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ background-color: #fcf8f2;
+ border-bottom: 2px solid #2e2522;
+ padding: 16px 0;
+ }
+ .nav-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .logo {
+ font-weight: 800;
+ font-size: 1.4rem;
+ text-transform: uppercase;
+ letter-spacing: -0.03em;
+ color: #2e2522;
+ text-decoration: none;
+ }
+ .logo span { color: #7f5539; }
+ .nav-links {
+ display: flex;
+ gap: 32px;
+ list-style: none;
+ }
+ .nav-links a {
+ text-decoration: none;
+ color: #2e2522;
+ font-weight: 600;
+ font-size: 0.95rem;
+ text-transform: uppercase;
+ transition: color 0.2s ease, border-bottom 0.2s ease;
+ border-bottom: 2px solid transparent;
+ padding-bottom: 2px;
+ }
+ .nav-links a:hover {
+ color: #7f5539;
+ border-bottom-color: #7f5539;
+ }
+
+ /* Hamburger */
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 8px;
+ }
+ .hamburger span {
+ display: block;
+ width: 28px;
+ height: 2px;
+ background: #2e2522;
+ transition: 0.3s;
+ }
+
+ /* Hero */
+ .hero {
+ padding: 80px 0 48px;
+ border-bottom: 2px solid #2e2522;
+ margin-bottom: 80px;
+ }
+ .hero-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 32px;
+ align-items: center;
+ }
+ .hero-visual {
+ aspect-ratio: 4/3;
+ background: repeating-linear-gradient(
+ 45deg,
+ #7f5539 0px, #7f5539 8px,
+ #2e2522 8px, #2e2522 16px,
+ #fcf8f2 16px, #fcf8f2 24px
+ );
+ border: 2px solid #2e2522;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ }
+ .hero-visual::after {
+ content: "🍸";
+ font-size: 6rem;
+ filter: drop-shadow(2px 2px 0 rgba(0,0,0,0.3));
+ }
+ .hero-text p {
+ font-size: 1.2rem;
+ font-weight: 400;
+ color: #7f5539;
+ margin-bottom: 1.5rem;
+ }
+ .hero-text .cta {
+ display: inline-block;
+ background: #2e2522;
+ color: #fcf8f2;
+ padding: 12px 32px;
+ text-decoration: none;
+ font-weight: 700;
+ text-transform: uppercase;
+ border: 2px solid #2e2522;
+ transition: all 0.2s;
+ }
+ .hero-text .cta:hover {
+ background: #fcf8f2;
+ color: #2e2522;
+ }
+
+ /* Sections */
+ section {
+ padding: 48px 0;
+ border-bottom: 1px solid #2e2522;
+ margin-bottom: 80px;
+ }
+ section:last-of-type { border-bottom: none; }
+
+ /* Card Grid */
+ .card-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 32px;
+ }
+
+ /* Info Cards */
+ .info-card {
+ border: 2px solid #2e2522;
+ padding: 24px;
+ background: #fcf8f2;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+ .info-card:hover {
+ transform: translateY(-4px);
+ box-shadow: 0 4px 0 #2e2522;
+ }
+ .info-card .icon {
+ font-size: 2.5rem;
+ margin-bottom: 12px;
+ display: block;
+ }
+ .info-card h3 {
+ font-size: 1.2rem;
+ text-transform: uppercase;
+ }
+ .info-card p {
+ color: #7f5539;
+ font-size: 0.95rem;
+ }
+
+ /* UGC Review Cards */
+ .review-card {
+ border: 2px solid #2e2522;
+ padding: 24px;
+ background: #fcf8f2;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+ display: flex;
+ flex-direction: column;
+ }
+ .review-card:hover {
+ transform: translateY(-4px);
+ box-shadow: 0 4px 0 #2e2522;
+ }
+ .review-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 12px;
+ font-size: 0.85rem;
+ color: #7f5539;
+ text-transform: uppercase;
+ }
+ .review-stars {
+ color: #2e2522;
+ font-size: 1.1rem;
+ letter-spacing: 2px;
+ }
+ .review-body {
+ font-size: 0.95rem;
+ line-height: 1.5;
+ flex-grow: 1;
+ }
+ .review-body strong {
+ color: #7f5539;
+ }
+
+ /* Phone CTA */
+ .phone-cta {
+ background: #2e2522;
+ color: #fcf8f2;
+ padding: 48px;
+ text-align: center;
+ border: 2px solid #2e2522;
+ margin: 48px 0;
+ }
+ .phone-cta a {
+ color: #fcf8f2;
+ text-decoration: none;
+ font-size: 2rem;
+ font-weight: 800;
+ letter-spacing: -0.02em;
+ transition: color 0.2s;
+ }
+ .phone-cta a:hover {
+ color: #7f5539;
+ }
+
+ /* Footer */
+ footer {
+ padding: 48px 0;
+ border-top: 2px solid #2e2522;
+ margin-top: 48px;
+ text-align: center;
+ font-size: 0.85rem;
+ color: #7f5539;
+ text-transform: uppercase;
+ }
+ footer a { color: #2e2522; text-decoration: none; }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ .container { padding: 0 24px; }
+ h1 { font-size: 2.4rem; }
+ h2 { font-size: 1.8rem; }
+ 
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ background: #fcf8f2;
+ border-bottom: 2px solid #2e2522;
+ padding: 24px;
+ gap: 16px;
+ }
+ .nav-links.active { display: flex; }
+ .hamburger { display: flex; }
+ .nav-inner { position: relative; }
+
+ .hero-grid {
+ grid-template-columns: 1fr;
+ gap: 24px;
+ }
+ .hero-visual { aspect-ratio: 16/9; }
+ .hero-text { text-align: center; }
+
+ .card-grid {
+ grid-template-columns: 1fr;
+ gap: 24px;
+ }
+
+ .phone-cta a { font-size: 1.4rem; }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (3/3) · kr-pbn-sr-009">
+  <meta property="og:description" content="kr-pbn-sr-009에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://seoul-club-review.program-school.online/posts-3.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="sticky-nav">
+ <div class="container nav-inner">
+ <a href="/" class="logo">공덕<span>클럽</span></a>
+ <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+ 
+ 
+ 
+ </button>
+ <nav>
+ <ul class="nav-links" id="navLinks">
+ <li><a href="#info">정보</a></li>
+ <li><a href="#reviews">리뷰</a></li>
+ <li><a href="#contact">연락</a></li>
+ </ul>
+ </nav>
+ </div>
+</header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 41개 · 3/3 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-002-1hpk6x0.html">창의적 문항 평가 루브릭, 당신이 원하는 자사고 면접을 알아보세요</a>
+        <p class="post-item__summary">아, 진짜... 특정 학교에서만 사용되는 창의적 문제 해결 평가 항목에 대해 얼마나 깊게 알고 있을까? 입시 컨설턴트로서, 우리는 이 루브릭을 어떻게 이해하고, 실제 면접에서 어떤 점들이 중요하게 </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <span class="pager__current">3</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
